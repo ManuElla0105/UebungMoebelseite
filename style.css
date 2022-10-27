@@ -1,0 +1,222 @@
+/*allgemeine Formatierung*/
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+img {
+    max-width: 30%;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+h2::first-letter { /*Erster Buchstabe groß und mit Farbe*/
+    color: peachpuff;
+    font-size: 2em;
+}
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.container {
+    border-radius: 5px;
+    background-color: peachpuff;
+    padding: 2% 10%;
+    margin: 0%;
+}
+.flexconditions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.flexconditions p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.conditions::first-letter {
+    color: blanchedalmond;
+    font-size: 200%;
+}
+h3 {
+    padding-left: 10%;
+}
+header {
+    background-color: lightgreen;
+    padding: 2%;
+}
+footer {
+    background-color: lightgreen;
+    padding: 0.1%;
+}
+/*Formatierung header Box*/
+section {
+    display: flex;
+    justify-content: space-around;
+}
+.logo { /*Größe definieren*/
+    max-width: 10%;
+    border-radius: 100%;
+}
+/*Formatierung Main Box*/
+button {
+    background-color: peachpuff;
+    padding: 2%;
+}
+a {
+    text-decoration: none; /*Ohne Unterstrich*/
+    color: darkblue;
+    font-size: 120%; /*Schriftgröße*/
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 4% 0;
+}
+.company {
+    display: flex;
+    flex-direction: column;
+    border: 12px ridge mediumpurple;
+    margin: 4%;
+    padding: 0 6%;
+}
+p {
+    text-align: justify;
+}
+
+.imgProduct {
+    display: flex;
+    justify-content: center;
+}
+.imgProduct img {
+    margin: 1%;
+}
+div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+    align-items: center;
+}
+.divText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+}
+.divText p {
+    max-width: 100%;
+}
+div p {
+    max-width: 40%;
+    margin-right: 10%;
+}
+.divList {
+    max-width: 40%;
+    margin-left: 8%;
+}
+.buttons {
+    border: solid;
+    color: darkblue;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+    border-radius: 40%;
+    background-color: lightgrey;
+}
+.guide {
+    display: flex;
+    flex-wrap: wrap;
+    border: 12px ridge mediumpurple;
+    margin: 2%;
+    padding: 0 6%;
+}
+svg {
+    max-width: 2%;
+    margin-left: 5%;
+}
+.contactarrow{
+    background-color: peachpuff;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+.details {
+    display: flex;
+    justify-content: space-around;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+/*Pfeil nach oben*/
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48
+}
+@media screen and (max-width: 360px) {
+    h3, div, img, .divText, .divList, .guide, .logo {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+    }
+    img, .guide, div p, .divText, .divList {
+        max-width: 90%;
+    }
+
+.logo{
+    max-width: 30%;
+}
+div p{
+    margin-right: 0%;
+}
+svg{
+    max-width: 5%;
+}
+.flexconditions{
+    align-items: center;
+}
+table {
+    display: flex;
+    overflow-x: auto;
+}
+.container{
+    display: flex;
+    text-align: start;
+}
+}
+
+
